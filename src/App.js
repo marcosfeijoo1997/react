@@ -13,7 +13,7 @@ import Herreria from './ItemListContainer/herreria';
 import Electrodos from './electrodos';
 import Alambre from './componentes/itemListContainer/Productos/Alambre';
 import Carpinteria from './componentes/itemListContainer/Carpinteria'
-
+import ApiCarpinteria from './componentes/apis/ApiCarpinteria';
 
 
 
@@ -22,12 +22,7 @@ import Carpinteria from './componentes/itemListContainer/Carpinteria'
 function App() {
   return (
     <div className="App">
-       <Navbar>    <li><a href='Inicio'>Inicio</a></li>
-            <li>Nosotros</li>
-            <li ><a href='Producto'>Productos</a></li >
-            <li>Servicios</li>
-            <li>Sucursales</li>
-            <CartWidget></CartWidget>
+       <Navbar> 
             </Navbar>
 
 
@@ -45,7 +40,7 @@ function App() {
             <Route path='/Electrodos' exact element={<Electrodos></Electrodos>}/>
             <Route path='/Alambre' exact element={<Alambre></Alambre>}/>
             <Route path='/CartWidget' exact element={<CartWidget></CartWidget>}/>
-
+            <Route path='/Backend/API/Carpinteria' exact element={<ApiCarpinteria></ApiCarpinteria>}/>
 
      
 

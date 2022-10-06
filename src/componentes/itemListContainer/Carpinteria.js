@@ -1,8 +1,6 @@
-
-
-
-
 const Carpinteria=()=>{
     
-    return(<></>)
+    return(<div>asd</div>)
+
 }
+export default Carpinteria

@@ -12,7 +12,7 @@ import Inicio from '../src/ItemListContainer/Inicio'
 import Herreria from './ItemListContainer/herreria';
 import Electrodos from './electrodos';
 import Alambre from './componentes/itemListContainer/Productos/Alambre';
-import Carpinteria from './'
+import Carpinteria from './componentes/itemListContainer/Carpinteria'
 
 
 

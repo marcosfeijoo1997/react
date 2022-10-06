@@ -1,17 +1,16 @@
 
 import AportedeSoldadura from '../ItemListContainer';
-import electrodos from '../../../assets/electrodos2.jpg'
-import flux from '../../../assets/rollo flux.jpg'
-import herreriaimg from '../../../assets/herreria.jpg';
-import carpinteriaimg from '../../../assets/carpinteria.jpg'
-import pintureriaimg from '../../../assets/pintureria.jpg'
-import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom"
+import electrodos from '../assets/electrodos2.jpg'
+import flux from '../assets/rollo flux.jpg'
+import herreriaimg from '../assets/herreria.jpg';
+import carpinteriaimg from '../assets/carpinteria.jpg'
+import pintureriaimg from '../assets/pintureria.jpg'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import {  Row, Col, Navbar } from "react-bootstrap";
 import Herreria from '../herreria';
 
 
 function Rubros(){
- // const navigate=useNavigate();
     return (
       <div className="productos">
   

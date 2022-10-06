@@ -1,0 +1,12 @@
+[{
+    "name":"Disco de corte",
+    "precio":3200,
+    "imagen":"http://localhost:3001/DiscoCorte.jpg",
+    "descripcion":"aswdpfoiahfgpauehrgaperg"
+},
+{
+"name":"Lija",
+"precio":150,
+"imagen":"http://localhost:3001/pintureria.jpg",
+"descripcion":"aswdpfoiahfgpauehrgaperg"
+}]

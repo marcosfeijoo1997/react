@@ -1,7 +1,7 @@
 
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
-import electrodos from '../ItemListContainer/assets/electrodos2.jpg'
-import flux from '../ItemListContainer/assets/rollo flux.jpg'
+import electrodos from '../assets/electrodos2.jpg'
+import flux from '../assets/rollo flux.jpg'
 import { Button } from 'react-bootstrap';
 
 const Herreria=()=>{

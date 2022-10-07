@@ -1,21 +1,36 @@
 import { useEffect,useState } from "react";
+import { useParams } from "react-router-dom";
+/*
 
-const Carpinteria=()=>{
-     let [datos,setDatos]=useState;
+{
+    url:https://pokeapi.co/api/v2/pokemon/ditto}
+*/
+
+const ItemDetails=({})=>{
+     let [datos,setDatos]=useState();
+     const {id}=useParams()
     useEffect(()=>{
-        fetch("http://localhost:3001/ApiCarpinteria.json")
-        .then(response =>
-             response.json())
-        .then(datos=>console.log(datos))
-        setDatos(datos);
-    },[])
+        fetch('https://pokeapi.co/api/v2/pokemon/1/')
+        .then((res)=>res.json())
+        .then((datos)=>setDatos(datos));
+       ;
+    },['https://pokeapi.co/api/v2/pokemon/1/'])
     
-    return(<div>
-        {datos?.foreach(producto=>{
-            console.log(producto.name)
-        return producto.name
-        })}
+    return(
+    <div>
+        {!datos ? (
+            <div>cargando...</div> ):(
+        
+       <div>
+        <p>{datos.name}</p>
+        <img src={datos.sprites.front_default}/>
+        
+
+       </div>
+        
+        
+    )}
     </div>)
 
 }
-export default Carpinteria
+export default ItemDetails

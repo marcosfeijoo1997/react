@@ -3,9 +3,9 @@ import Carpinteria from './Carpinteria';
 function Inicio() {
     return (
       <div>
-     <h1>Bienvenidos a ferreteria "El herrero"</h1>
+     <h1>Bienvenidos a ferreteria "Eherrero"</h1>
      <br></br>
-     <h3>Para ver nuestro catalogo accede a productos</h3>
+     <h3>Para ver nuestro catalogo accede a productos</h3>>
      </div>
    
     );

@@ -1,44 +1,48 @@
+import React, { useState, useEffect } from 'react';
+import Pokemon from './Productos/pokemon';
 
-import ItemListContainer from './ItemListContainer';
-import electrodos from '../../assets/electrodos2.jpg'
-import flux from '../../assets/rollo flux.jpg'
-import { Button } from 'react-bootstrap';
+const Pokedex = () => {
+  const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon');
+  const [page, setPage] = useState();
 
-const Herreria=()=>{
-    return (
-      <div className="productos">
-        <li className='listadeherreria' >  
-        <ItemListContainer Nombre="Electrodos"
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((list) => setPage(list));
+  }, [url]);
 
-        imagen={electrodos}>
+  const paginationButtonClickHandler = (newUrl) => {
+    setUrl(newUrl);
+  };
 
-      
-          
-          </ItemListContainer>
+  return (
+    <div>
+      {!page ? (
+        <div>Cargando...</div>
+      ) : (
+        <div>
+          {page.results.map((pokemon) => (
+            <Pokemon url={pokemon.url} key={pokemon.name} />
+          ))}
 
-          </li>
-        
-         
+          {page.previous ? (
+            <button onClick={() => paginationButtonClickHandler(page.previous)}>
+              Prev
+            </button>
+          ) : (
+            ''
+          )}
+          {page.next ? (
+            <button onClick={() => paginationButtonClickHandler(page.next)}>
+              Next
+            </button>
+          ) : (
+            ''
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
 
-          <li className='listadeherreria'> 
-          <ItemListContainer Nombre={"Alambre"}
-
-         imagen={flux}>
-          
-             </ItemListContainer></li>
-            
-       
-        
-       
-        
-    
-     
-     
-      </div>
-      
-      
-    );
-  }
-
-
-export default Herreria
+export default Pokedex;

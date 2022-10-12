@@ -1,18 +1,36 @@
-const ItemListContainer=({Nombre,imagen,descripcion})=>{return(
+import { useEffect,useState } from "react";
+import { useParams } from "react-router-dom";
+/*
 
-    <div className="Producto">
-    <h3><a href={Nombre}>{Nombre}</a></h3>
-    <img src= {imagen}></img>
-    <h5>{descripcion}</h5>
-   
-    
-    
-    
-    </div>
-    
+{
+    url:https://pokeapi.co/api/v2/pokemon/ditto}
+*/
 
-
-)
+const ItemDetails=({})=>{
+     let [datos,setDatos]=useState([]);
+     const {id}=useParams()
+    useEffect(()=>{
+        fetch('https://pokeapi.co/api/v2/pokemon/1/')
+        .then((res)=>res.json())
+        .then((datosres)=>setDatos(datos));
+       ;
+    },['https://pokeapi.co/api/v2/pokemon/1/'])
     
+    return(
+    <div>
+        {!datos ? (
+            <div>cargando...</div> ):(
+        
+       <div>
+        <p>{datos.name}</p>
+        <img src={datos.sprites.front_default}/>
+        
+
+       </div>
+        
+        
+    )}
+    </div>)
+
 }
-export default ItemListContainer
+export default ItemDetails

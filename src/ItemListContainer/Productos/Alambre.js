@@ -1,4 +1,4 @@
-import Rollo from '../assets/rollo flux.jpg'
+import Rollo from '../../../assets/rollo flux.jpg'
 const Alambre=()=> {
     return(
     <h3> <img src={Rollo}></img>

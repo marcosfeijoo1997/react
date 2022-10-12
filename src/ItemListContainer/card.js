@@ -18,7 +18,7 @@ const Pokedex = () => {
   return (
     <div>
       {!page ? (
-        <div>Cargando...</div>
+        <div>cargando...</div>
       ) : (
         <div>
           {page.results.map((pokemon) => (

@@ -1,12 +1,12 @@
 
 
 
-import herreriaimg from '../assets/herreria.jpg';
-import carpinteriaimg from '../assets/carpinteria.jpg'
-import pintureriaimg from '../assets/pintureria.jpg'
+import herreriaimg from '../../assets/herreria.jpg';
+import carpinteriaimg from '../../assets/carpinteria.jpg'
+import pintureriaimg from '../../assets/pintureria.jpg'
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom"
 import {  Row, Col, Navbar } from "react-bootstrap";
-import Herreria from '../card';
+
 
 
 function Rubros(){

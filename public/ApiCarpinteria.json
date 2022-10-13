@@ -1,12 +1,22 @@
 [{
-    "name":"Disco de corte",
+    "name":"DiscoCorte",
     "precio":3200,
-    "imagen":"http://localhost:3001/DiscoCorte.jpg",
-    "descripcion":"aswdpfoiahfgpauehrgaperg"
+    "imagen":"http://localhost:3000/DiscoCorte.jpg",
+    "descripcion":"aswdpfoiahfgpauehrgaperg",
+    "titulo":"Disco de corte"
 },
 {
 "name":"Lija",
 "precio":150,
-"imagen":"http://localhost:3001/pintureria.jpg",
-"descripcion":"aswdpfoiahfgpauehrgaperg"
-}]
+"imagen":"http://localhost:3000/lijas.jpg",
+"descripcion":"aswdpfoiahfgpauehrgaperg",
+"titulo":"Lija"
+},
+
+{
+    "name":"DiscoFlap",
+    "precio":300,
+    "imagen":"http://localhost:3000/discoflap.jpg",
+    "descripcion":"aswdpfoiahfgpauehrgaperg",
+    "titulo":"Disco Flap"
+    }]

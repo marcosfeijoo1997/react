@@ -10,7 +10,7 @@ import { Row, Col } from "react-bootstrap";
 import Inicio from '../src/ItemListContainer/Inicio'
 import Herreria from './ItemListContainer/herreria';
 import Carpinteria from './ItemListContainer/Productos/ItemListContainer'
-import DetalleProducto from './ItemListContainer/Productos/DetalleProducto';
+import DetalleProducto from './ItemListContainer/Productos/ItemDetail';
 
 
 

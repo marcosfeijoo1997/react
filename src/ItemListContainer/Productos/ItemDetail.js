@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import { useNavigate,useParams } from "react-router-dom";
 import './producto.css' 
 
-const Carpinteria=()=>{
+const ItemDetail=()=>{
  const { productName } = useParams();
      let [datos,setDatos]=useState();
     useEffect(()=>{
@@ -17,11 +17,13 @@ const Carpinteria=()=>{
         
     <div>
         
-        {datos?.forEach((element)=>{
+        {datos?.map((element)=>{
              if(productName===element.name){
                 return <div className='producto' key={element.name} onClick={()=>{navigate('/id-'+element.name)}}>
             <div key={element.name}> {element.titulo} </div>
             <img src={element.imagen}></img>
+            <div> {element.descripcion}</div>
+            <div className="Precio">${element.precio}</div>
             </div>
              }
 
@@ -31,4 +33,4 @@ const Carpinteria=()=>{
       </div>
       )
     }
-export default Carpinteria
+export default ItemDetail

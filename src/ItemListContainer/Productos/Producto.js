@@ -27,7 +27,7 @@ function Rubros(){
           <li className='rotate-scale-up'><a href='pintureria'>Pintureria</a></li>
           <div className='imgprod'>
           
-          <img src={pintureriaimg}></img></div>
+          <img src={pintureriaimg} ></img></div>
           
      
          

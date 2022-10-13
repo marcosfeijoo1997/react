@@ -1,3 +1,10 @@
 .producto {
     cursor: pointer;
 }
+.Precio 
+{
+    font-size: 50px;
+}
+.imgprod {
+    max-width: 100%;;
+}

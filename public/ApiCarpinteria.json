@@ -2,14 +2,14 @@
     "name":"DiscoCorte",
     "precio":3200,
     "imagen":"http://localhost:3000/DiscoCorte.jpg",
-    "descripcion":"aswdpfoiahfgpauehrgaperg",
+    "descripcion":"Disco para corte de madera de 60 dientes",
     "titulo":"Disco de corte"
 },
 {
 "name":"Lija",
 "precio":150,
 "imagen":"http://localhost:3000/lijas.jpg",
-"descripcion":"aswdpfoiahfgpauehrgaperg",
+"descripcion":"Lija para metales y madera, vienen en granos de 60,80,120,180,300",
 "titulo":"Lija"
 },
 
@@ -17,6 +17,18 @@
     "name":"DiscoFlap",
     "precio":300,
     "imagen":"http://localhost:3000/discoflap.jpg",
-    "descripcion":"aswdpfoiahfgpauehrgaperg",
+    "descripcion":"Disco para el desbaste de metales y madera, vienen en granos de 60,80,120,180,300",
     "titulo":"Disco Flap"
-    }]
+    },
+
+{   "name":"Discode4'",
+"precio":100,
+"imagen":"http://localhost:3000/disco.jpg",
+"descripcion":"Disco para el corte de maderas y chapas",
+"titulo":"Disco de 4'"},
+
+{   "name":"Ingletadora'",
+"precio":35000,
+"imagen":"http://localhost:3000/Makita.jpg",
+"descripcion":"Ingletadora telescopica marca Makita",
+"titulo":"Ingletadora'"}]

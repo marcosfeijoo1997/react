@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from '../src/componentes/navbar/navbar'
 import Alert from 'react-bootstrap/Alert';
 import React from 'react';
-import CartWidget from './componentes/CartWidget';
+import ShoppingCart from './componentes/navbar/ShoppingCart';
 import Producto from './ItemListContainer/Productos/Producto'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { Row, Col } from "react-bootstrap";
@@ -35,7 +35,7 @@ function App() {
         <Route path="/Inicio" exact element={<Inicio></Inicio>}/>
         <Route path='/Herreria' exact element={<Herreria></Herreria>}/>
         <Route path='/Carpinteria' exact element={<Carpinteria></Carpinteria>}/>
-        <Route path='/CartWidget' exact element={<CartWidget></CartWidget>}/>
+        <Route path='/ShoppingCart' exact element={<ShoppingCart></ShoppingCart>}/>
         <Route path="/id-:productName" element={<DetalleProducto></DetalleProducto>} />
         </Routes>
       </Router>

@@ -1,4 +1,4 @@
-import CartWidget from "../CartWidget"
+import ShoppingCart from "./ShoppingCart" 
 const Navbar =({children})=>
 {
    return ( 
@@ -12,7 +12,7 @@ const Navbar =({children})=>
       
             
             
-            <CartWidget></CartWidget>
+            <ShoppingCart></ShoppingCart>
             {children}
         </div>
         

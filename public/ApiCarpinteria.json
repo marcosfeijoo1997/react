@@ -27,8 +27,8 @@
 "descripcion":"Disco para el corte de maderas y chapas",
 "titulo":"Disco de 4'"},
 
-{   "name":"Ingletadora'",
+{   "name":"Ingletadora",
 "precio":35000,
 "imagen":"http://localhost:3000/Makita.jpg",
 "descripcion":"Ingletadora telescopica marca Makita",
-"titulo":"Ingletadora'"}]
+"titulo":"Ingletadora"}]

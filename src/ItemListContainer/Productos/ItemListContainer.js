@@ -19,7 +19,7 @@ const ItemListContainer=()=>{
             
         return(
             <div className='producto' key={element.name} onClick={()=>{navigate('/id-'+element.name)}}>
-            <div key={element.name}> {element.titulo}</div>
+            <div key={element.name}> <h1>{element.titulo}</h1></div>
             <div className='imgprod'>
             <img src={element.imagen}></img></div>
             <div className="Precio">${element.precio}</div>

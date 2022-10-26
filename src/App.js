@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from '../src/componentes/navbar/navbar'
 import Alert from 'react-bootstrap/Alert';
 import React from 'react';
-import ShoppingCart from './componentes/navbar/ShoppingCart';
+import ShoppingCart from './ItemListContainer/Productos/carritologica/ShoppingCart';
 import Producto from './ItemListContainer/Productos/Producto'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { Row, Col } from "react-bootstrap";
@@ -11,12 +11,11 @@ import Inicio from '../src/ItemListContainer/Inicio'
 import Herreria from './ItemListContainer/herreria';
 import Carpinteria from './ItemListContainer/Productos/ItemListContainer'
 import DetalleProducto from './ItemListContainer/Productos/ItemDetail';
-
+import Pintureria from './ItemListContainer/Pintureria';
 
 
 const DefaultContainer=()=>(
   <div>
-
   </div>
 
 
@@ -36,7 +35,8 @@ function App() {
         <Route path='/Herreria' exact element={<Herreria></Herreria>}/>
         <Route path='/Carpinteria' exact element={<Carpinteria></Carpinteria>}/>
         <Route path='/ShoppingCart' exact element={<ShoppingCart></ShoppingCart>}/>
-        <Route path="/id-:productName" element={<DetalleProducto></DetalleProducto>} />
+        <Route path='/Pintureria' exact element={<Pintureria></Pintureria>}/>
+       <Route path="/id-:productName" element={<DetalleProducto></DetalleProducto>} />
         </Routes>
       </Router>
 

@@ -1,4 +1,4 @@
-import ShoppingCart from "./ShoppingCart" 
+import ShoppingCart from "../../ItemListContainer/Productos/carritologica/ShoppingCart"
 const Navbar =({children})=>
 {
    return ( 
@@ -12,7 +12,6 @@ const Navbar =({children})=>
       
             
             
-            <ShoppingCart></ShoppingCart>
             {children}
         </div>
         

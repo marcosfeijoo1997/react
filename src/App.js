@@ -11,7 +11,7 @@ import Inicio from './componentes/ItemListContainer/Inicio'
 import Herreria from './componentes/ItemListContainer/Herreria';
 import Carpinteria from './componentes/ItemListContainer'
 import DetalleProducto from './componentes/ItemListContainer/Productos/ItemDetail';
-import Pintureria from './componentes/ItemListContainer/Pintureria';
+import Pintureria from './componentes/ItemListContainer/categorias/Categoria';
 const DefaultContainer=()=>(
   <div>
   </div>

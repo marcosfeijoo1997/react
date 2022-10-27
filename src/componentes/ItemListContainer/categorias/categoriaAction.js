@@ -1,0 +1,3 @@
+export const TYPES={
+   FETCH_PRODUCTS:"FETCH_PRODUCTS"
+    }

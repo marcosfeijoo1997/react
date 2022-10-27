@@ -9,13 +9,7 @@ import { TYPES } from "./shoppingAction";
 
 const ShoppingCart=()=>{
     const [state,dispatch]=useReducer (shoppingReducer,shoppingInitialState);
-    useEffect(()=>{
-        fetch("http://localhost:3000/ApiCarpinteria.json")
-        .then(response =>
-             response.json())
-        .then(datos=>setDatos(datos))
-        
-    },[])
+
         const {products,cart}=state;
         const addToCart =(id)=>{
             console.log (id);

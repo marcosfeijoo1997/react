@@ -1,4 +1,4 @@
-import ShoppingCart from "../../ItemListContainer/Productos/carritologica/ShoppingCart"
+import ShoppingCart from "../ItemListContainer/Productos/carritologica/ShoppingCart" 
 const Navbar =({children})=>
 {
    return ( 

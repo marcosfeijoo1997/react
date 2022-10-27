@@ -7,7 +7,7 @@ import Contador from './Productos/Contador';
 
 import { useEffect,useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../ItemListContainer/Productos/producto.css' 
+import './Productos/producto.css' 
 
 
 const Herreria=()=>{

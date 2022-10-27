@@ -1,7 +1,7 @@
-import carrito from '../../../assets/carrito.png'
+import carrito from '../../../../assets/carrito.png'
 import { useEffect, useReducer } from "react"
 import { shoppingInitialState,shoppingReducer } from "./shoppingReducer"
-import ProductItem from "../productItem";
+import ProductItem from "../ProductItem";
 import CartItem from "./CartItem";
 import { TYPES } from "./shoppingAction";
 

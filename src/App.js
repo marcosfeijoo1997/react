@@ -3,17 +3,15 @@ import './App.css';
 import Navbar from '../src/componentes/navbar/navbar'
 import Alert from 'react-bootstrap/Alert';
 import React from 'react';
-import ShoppingCart from './ItemListContainer/Productos/carritologica/ShoppingCart';
-import Producto from './ItemListContainer/Productos/Producto'
+import ShoppingCart from './componentes/ItemListContainer/Productos/carritologica/ShoppingCart';
+import Producto from './componentes/ItemListContainer/Productos/Producto'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { Row, Col } from "react-bootstrap";
-import Inicio from '../src/ItemListContainer/Inicio'
-import Herreria from './ItemListContainer/herreria';
-import Carpinteria from './ItemListContainer/Productos/ItemListContainer'
-import DetalleProducto from './ItemListContainer/Productos/ItemDetail';
-import Pintureria from './ItemListContainer/Pintureria';
-
-
+import Inicio from './componentes/ItemListContainer/Inicio'
+import Herreria from './componentes/ItemListContainer/Herreria';
+import Carpinteria from './componentes/ItemListContainer'
+import DetalleProducto from './componentes/ItemListContainer/Productos/ItemDetail';
+import Pintureria from './componentes/ItemListContainer/Pintureria';
 const DefaultContainer=()=>(
   <div>
   </div>

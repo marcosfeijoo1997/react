@@ -1,4 +1,5 @@
 import ShoppingCart from "./Productos/carritologica/ShoppingCart";
+import { useEffect } from "react";
 
 const Pintureria=()=>{ useEffect(()=>{
     fetch("http://localhost:3000/ApiCarpinteria.json")

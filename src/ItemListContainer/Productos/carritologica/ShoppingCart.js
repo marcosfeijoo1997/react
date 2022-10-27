@@ -1,5 +1,5 @@
 import carrito from '../../../assets/carrito.png'
-import { useReducer } from "react"
+import { useEffect, useReducer } from "react"
 import { shoppingInitialState,shoppingReducer } from "./shoppingReducer"
 import ProductItem from "../productItem";
 import CartItem from "./CartItem";
@@ -8,9 +8,14 @@ import { TYPES } from "./shoppingAction";
 
 
 const ShoppingCart=()=>{
-    const [state,dispatch]=useReducer (
-        shoppingReducer,
-        shoppingInitialState);
+    const [state,dispatch]=useReducer (shoppingReducer,shoppingInitialState);
+    useEffect(()=>{
+        fetch("http://localhost:3000/ApiCarpinteria.json")
+        .then(response =>
+             response.json())
+        .then(datos=>setDatos(datos))
+        
+    },[])
         const {products,cart}=state;
         const addToCart =(id)=>{
             console.log (id);

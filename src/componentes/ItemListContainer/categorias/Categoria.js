@@ -1,6 +1,6 @@
 import ShoppingCart from "../Productos/carritologica/ShoppingCart";
 import { categoriaReducer,categoriaInitialState } from "./categoriaReducer";
-import { useEffect } from "react";
+import { useEffect,useReducer } from "react";
 import { TYPES } from "./categoriaAction";
 
 const Categoria=()=>{ 
@@ -15,11 +15,15 @@ const Categoria=()=>{
     
 
     const [state,dispatch]=useReducer(categoriaReducer,categoriaInitialState);
-    const {products}=state;
+    let {products}=state;
     
 
     return (
-   <div><ShoppingCart/></div>)
+   <div>
+    {products.map(function(product){
+      <p key={product.name}>{product.titulo}</p>
+    })}
+   </div>)
 }
 
 export default Categoria

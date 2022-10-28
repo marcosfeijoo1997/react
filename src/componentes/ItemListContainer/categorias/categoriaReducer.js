@@ -12,7 +12,6 @@ export function categoriaReducer(state,action){
     switch (action.type){
         case TYPES.FETCH_PRODUCTS:{
             state.products=action.payload;
-
         }
 
 

@@ -32,9 +32,10 @@ function App() {
         <Route path="/Producto" exact element={<Producto></Producto>} />
         <Route path="/Inicio" exact element={<Inicio></Inicio>}/>
         <Route path='/Herreria' exact element={<Herreria></Herreria>}/>
+        <Route path='/Carrito' exact element={<ShoppingCart></ShoppingCart>}/>
         <Route path='/Carpinteria' exact element={<Carpinteria></Carpinteria>}/>
         <Route path='/ShoppingCart' exact element={<ShoppingCart></ShoppingCart>}/>
-        <Route path='/Pintureria' exact element={<Categoria></Categoria>}/>
+        <Route path='/Categoria' exact element={<Categoria></Categoria>}/>
        <Route path="/id-:productName" element={<DetalleProducto></DetalleProducto>} />
         </Routes>
       </Router>

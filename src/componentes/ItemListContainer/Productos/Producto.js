@@ -24,7 +24,7 @@ function Rubros(){
           <div className='imgprod'>
           <img src={carpinteriaimg}></img></div>
 
-          <li className='rotate-scale-up'><a href='pintureria'>Pintureria</a></li>
+          <li className='rotate-scale-up'><a href='Categoria'>Pintureria</a></li>
           <div className='imgprod'>
           
           <img src={pintureriaimg} ></img></div>

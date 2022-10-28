@@ -1,17 +1,19 @@
 import { TYPES } from "./categoriaAction";
 
-export const categoriaInitialState={
+export const initialState=()=>({
     products:[
     
     ],
-   
-};
 
-export function categoriaReducer(state,action){
+});
+
+export function categoriaReducer(state=initialState(),action={}){
 
     switch (action.type){
         case TYPES.FETCH_PRODUCTS:{
-            state.products=action.payload;
+            return Object.assign({}, state, {
+                products: action.payload
+             })
         }
 
 
